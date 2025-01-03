@@ -1,0 +1,51 @@
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+h1{
+    text-align: center;
+}
+
+footer {
+    margin-top: auto;
+}
+
+.gallery-item {
+    position: relative;
+    /* overflow: hidden; */
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.gallery-item img {
+    width: 100%;
+    object-fit: cover;
+    border-radius: 8px;
+    transition: transform 0.3s ease;
+}
+
+.gallery-item img:hover {
+    transform: scale(1.1);
+    z-index: 1;
+}
+
+.gallery-item-title {
+    text-align: center;
+    margin-top: 20px;
+    font-style: italic;
+}
+
+.btn-dark {
+    font-size: 1.2rem;
+    padding: 0.8rem 1.2rem;
+    border-radius: 0.5rem;
+    transition: all 0.3s ease; 
+}
+
+.btn-dark:hover {
+    background-color: #555; 
+    transform: scale(1.1);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
